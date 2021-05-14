@@ -6,8 +6,8 @@ import { EffectsCommandMap, SubscriptionAPI } from 'dva';
 import { match } from 'react-router-dom';
 import { Location, LocationState, History } from 'history';
 
-export * from '/home/scq/employee-management/employee-frontend/src/models/employee';
-export * from '/home/scq/employee-management/employee-frontend/src/models/employees';
+export * from '/home/scq/software-engineering/employee-management/employee-frontend/src/models/employee';
+export * from '/home/scq/software-engineering/employee-management/employee-frontend/src/models/employees';
 
 export interface Action<T = any> {
   type: T

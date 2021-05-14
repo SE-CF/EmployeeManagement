@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Table, Column, Space } from 'antd'
 import { connect } from 'dva'
+import { Link } from 'umi'
 
 function EmployeeList({ employees, dispatch }) {
   const { Column } = Table
@@ -69,7 +70,7 @@ function EmployeeList({ employees, dispatch }) {
         key="action"
         render={(text, record) => (
           <Space size="middle">
-            {/* <a>Invite {record.lastName}</a> */}
+            <Link to={'/employee/' + record.id}>To Employee</Link>
             <a
               onClick={() =>
                 dispatch({

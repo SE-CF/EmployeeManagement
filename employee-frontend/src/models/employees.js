@@ -41,7 +41,7 @@ export default {
     *getEmployee(id, { call, put }) {
       const response = yield call(
         request.get,
-        'http://localhost:8080/employees/' + id
+        'http://localhost:8080/employees/3'
       )
       yield put({
         type: 'update',

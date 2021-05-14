@@ -3,10 +3,10 @@ import { Component } from 'react';
 import { ApplyPluginsType } from 'umi';
 import dva from 'dva';
 // @ts-ignore
-import createLoading from '/home/scq/employee-management/employee-frontend/node_modules/dva-loading/dist/index.esm.js';
+import createLoading from '/home/scq/software-engineering/employee-management/employee-frontend/node_modules/dva-loading/dist/index.esm.js';
 import { plugin, history } from '../core/umiExports';
-import ModelEmployee0 from '/home/scq/employee-management/employee-frontend/src/models/employee.js';
-import ModelEmployees1 from '/home/scq/employee-management/employee-frontend/src/models/employees.js';
+import ModelEmployee0 from '/home/scq/software-engineering/employee-management/employee-frontend/src/models/employee.js';
+import ModelEmployees1 from '/home/scq/software-engineering/employee-management/employee-frontend/src/models/employees.js';
 
 let app:any = null;
 
