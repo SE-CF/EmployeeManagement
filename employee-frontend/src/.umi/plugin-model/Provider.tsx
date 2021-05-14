@@ -1,13 +1,13 @@
 // @ts-nocheck
 import React from 'react';
-import initialState from '/home/scq/software-engineering/employee-management/employee-frontend/src/.umi/plugin-initial-state/models/initialState';
+import initialState from 'E:/NJU/大三下/软工实验/EmployeeManagement/employee-frontend/src/.umi/plugin-initial-state/models/initialState';
 
 // @ts-ignore
-import Dispatcher from '/home/scq/software-engineering/employee-management/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
+import Dispatcher from 'E:/NJU/大三下/软工实验/EmployeeManagement/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/dispatcher';
 // @ts-ignore
-import Executor from '/home/scq/software-engineering/employee-management/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/executor';
+import Executor from 'E:/NJU/大三下/软工实验/EmployeeManagement/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/executor';
 // @ts-ignore
-import { UmiContext } from '/home/scq/software-engineering/employee-management/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/constant';
+import { UmiContext } from 'E:/NJU/大三下/软工实验/EmployeeManagement/employee-frontend/node_modules/@umijs/plugin-model/lib/helpers/constant';
 
 export const models = { '@@initialState': initialState,  };
 

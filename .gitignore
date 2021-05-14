@@ -31,3 +31,13 @@ build/
 
 ### VS Code ###
 .vscode/
+.editorconfig
+.eslintrc
+.prettierignore
+.prettierrc
+.umirc.js
+
+### umi ###
+node_modules/
+/node_modules/
+/node_modules/*
