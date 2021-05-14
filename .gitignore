@@ -58,3 +58,5 @@ package-lock.json
 # umi
 .umi
 .umi-production
+/employee-frontend/src/.umi/
+/employee-frontend/src/.umi/*
