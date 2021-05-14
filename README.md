@@ -1,6 +1,8 @@
 # README
 
-仓库地址：https://gitee.com/Mr-Nan05/employee-management.git
+仓库地址：https://github.com/SE-CF/EmployeeManagement.git
+
+或：https://gitee.com/Mr-Nan05/employee-management.git
 
 ### 效果截图
 
