@@ -13,10 +13,11 @@ export default {
   },
 
   effects: {
-    *getEmployee(id, { call, put }) {
+    *getEmployee(param, { call, put }) {
+      // console.log(`http://localhost:8080/employees/${param.id}`)
       const response = yield call(
         request.get,
-        `http://localhost:8080/employees/3`
+        `http://localhost:8080/employees/${param.id}`
       )
       yield put({
         type: 'update',

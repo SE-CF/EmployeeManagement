@@ -80,7 +80,7 @@ export default function BasicLayout({ children }) {
         </div>
       </Content>
       <Footer style={{ textAlign: 'center' }}>
-        Employee Management ©2021 Created by Mr.Nan
+        Employee Management ©2021 Created by Software Repairing Group
       </Footer>
     </Layout>
   )
