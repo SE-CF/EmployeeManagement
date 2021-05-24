@@ -11,10 +11,13 @@ import org.springframework.hateoas.IanaLinkRelations;
 import org.springframework.hateoas.Link;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.JSONObject;
 
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
@@ -44,8 +47,10 @@ public class EmployeeController {
         );
     }
 
-    @PostMapping(path="/employees") // Map ONLY POST Requests
-    public ResponseEntity<?> addNewStudent (Employee employee) {
+    @PostMapping(path="/employees/{str}") // Map ONLY POST Requests
+    public ResponseEntity<?> addNewStudent (@PathVariable String str) {
+        System.out.println(str);
+        Employee employee=JSONObject.parseObject(str, Employee.class);
         try{
             employeeService.saveEmployee(employee);
             EntityModel<Employee> studentResource = new EntityModel<>(employee,

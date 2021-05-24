@@ -64,7 +64,27 @@ public class Employee implements Serializable{
         return NativePlace;
     }
 
+    public void setName(String name) {
+        Name = name;
+    }
+
     public void setGender(String gender) {
         Gender = gender;
+    }
+
+    public void setBirthDate(String birthDate) {
+        BirthDate = birthDate;
+    }
+
+    public void setNativePlace(String nativePlace) {
+        NativePlace = nativePlace;
+    }
+
+    public void setDepartment(String department) {
+        Department = department;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 }
