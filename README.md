@@ -12,7 +12,7 @@
 
 ### front-end
 
-前端功能完成50%，此前需要先启动后端
+前端功能已完成，此前需要先启动后端
 
 ```shell
 cd employee-frontend
