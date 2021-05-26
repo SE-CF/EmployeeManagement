@@ -3,6 +3,7 @@ import {Form, Input, Cascader, Select, Row, Col, Checkbox, Button, AutoComplete,
 import { Calendar, Card } from 'antd';
 import { UserOutlined, LockOutlined } from '@ant-design/icons';
 import {connect} from "dva";
+import {Link} from "umi";
 // import api from '../../api';
 
 const { Option } = Select;
@@ -200,7 +201,26 @@ function AddPage({ employees, dispatch }){
 
             <Form.Item {...tailFormItemLayout}>
                 <Button type="primary" htmlType="submit">
-                    <a
+                    {/*<a*/}
+                    {/*    onClick={() =>*/}
+                    {/*        dispatch({*/}
+                    {/*            type: 'employees/addEmployee',*/}
+                    {/*            payload: {*/}
+                    {/*                // value:{'id':myid,'name':name,'gender':gender,'birthdate':birthDate,'nativePlace':nativePlace,'department':department},*/}
+                    {/*                id:myid,*/}
+                    {/*                name:name,*/}
+                    {/*                gender:gender,*/}
+                    {/*                birthdate:birthDate,*/}
+                    {/*                nativePlace:nativePlace,*/}
+                    {/*                department:department,*/}
+                    {/*            },*/}
+                    {/*        })*/}
+                    {/*    }*/}
+                    {/*>*/}
+                    {/*    添加*/}
+                    {/*</a>*/}
+                    <Link
+                        to={'/employee'}
                         onClick={() =>
                             dispatch({
                                 type: 'employees/addEmployee',
@@ -215,9 +235,7 @@ function AddPage({ employees, dispatch }){
                                 },
                             })
                         }
-                    >
-                        添加
-                    </a>
+                    >查看</Link>
                 </Button>
             </Form.Item>
         </Form>

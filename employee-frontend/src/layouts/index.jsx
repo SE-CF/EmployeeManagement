@@ -50,16 +50,16 @@ export default function BasicLayout({ children }) {
     <Layout>
       <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
         <div className="logo" />
-        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['2']}>
+        <Menu theme="dark" mode="horizontal" defaultSelectedKeys={['1']}>
           <Menu.Item key="1">
             <Link to="/">Home</Link>
           </Menu.Item>
           <Menu.Item key="2">
             <Link to="/employee"> List </Link>
           </Menu.Item>
-          <Menu.Item key="3">
-            <Link to="/employee/3">Employee</Link>
-          </Menu.Item>
+          {/*<Menu.Item key="3">*/}
+          {/*  <Link to="/employee/3">Employee</Link>*/}
+          {/*</Menu.Item>*/}
         </Menu>
       </Header>
       <Content
