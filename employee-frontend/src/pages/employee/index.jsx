@@ -85,7 +85,8 @@ function EmployeeList({ employees, dispatch }) {
          key="action"
          render={(text, record) => (
            <Space size="middle">
-             <Link to={'/employee/' + record.id}>查看</Link>
+             <Link to={'/edit?id='+record.id+'&&name='+record.name+'&&gender='+record.gender+'&&birthDate='+record.birthDate+'&&department='+record.department+'&&nativePlace='+record.nativePlace}>修改</Link>
+             <Link to={'/employee/' + record.id}>查看</Link> 
              <a
                onClick={() =>
                  dispatch({
@@ -96,7 +97,7 @@ function EmployeeList({ employees, dispatch }) {
                  })
                }
              >
-               Delete
+               删除
              </a>
            </Space>
          )}
